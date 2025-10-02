@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:react95.github.io)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
