@@ -195,7 +195,7 @@ const ProjectsModal = ({
     <Modal
       closeModal={onClose}
       style={{
-        width: '400px',
+        width: currentProject ? '600px' : '400px',
         height: '350px',
         left: position.x,
         top: position.y,
