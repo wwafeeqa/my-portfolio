@@ -207,7 +207,7 @@ const Home = () => {
           <div>README.md</div>
         </IconContainer>
 
-        <IconContainer onClick={() => setShowMusic(true)}>
+        {/* <IconContainer onClick={() => setShowMusic(true)}>
           <Msacm3210 variant="32x32_4" />
           <div>MyMusicVisualizer</div>
         </IconContainer>
@@ -215,7 +215,7 @@ const Home = () => {
         <IconContainer onClick={() => setShowSynth(true)}>
           <Mmsys120 variant="32x32_4" />
           <div>MySynthesizer</div>
-        </IconContainer>
+        </IconContainer> */}
 
         <IconContainer onClick={() => setShowMap(true)}>
           <Inetcpl1313 variant="48x48_4" />
