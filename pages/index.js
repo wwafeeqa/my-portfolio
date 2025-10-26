@@ -229,6 +229,10 @@ const Home = () => {
           <div>MyProjects</div>
         </IconContainer>
 
+        <IconContainer onClick={() => setShowConnect(true)}>
+          <Mail variant="32x32_4" />
+          <div>Let's Connect.txt</div>
+        </IconContainer>
 
         {/* Render all open modals */}
         {openModals.map((modalType) => (
