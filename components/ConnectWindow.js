@@ -1,7 +1,7 @@
 // components/ConnectWindow.js
 import React, { useState } from 'react';
 import { List, Modal } from '@react95/core';
-import { Mail, Inetcpl1313, Cachevu100, Msacm3210, Notepad, Msnsign100, Wmsui321001 } from '@react95/icons';
+import { Mail, Inetcpl1313, Cachevu100, Msacm3210, Notepad, Msnsign100, Progman19, Winhlp324001 } from '@react95/icons';
 import styles from './window.module.css';
 
 const ConnectWindow = ({ onClose, position }) => {
@@ -33,10 +33,16 @@ const ConnectWindow = ({ onClose, position }) => {
       link: 'https://www.last.fm/user/wafeeqa',
     },
     {
-      icon: <Wmsui321001 variant="32x32_4" />,
+      icon: <Progman19 variant="32x32_4" />,
       label: 'Letterboxd',
       value: 'letterboxd.com/wafeeqa',
       link: 'https://letterboxd.com/wafeeqa/',
+    },
+    {
+      icon: <Winhlp324001 variant="32x32_4" />,
+      label: 'Goodreads',
+      value: 'goodreads.com/wafeeqa',
+      link: 'https://www.goodreads.com/user/show/194779761-wafeeqa',
     },
   ];
 
