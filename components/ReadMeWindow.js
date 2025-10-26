@@ -126,7 +126,7 @@ const ReadMeWindow = ({ onClose, position }) => {
             </p>
 
             <p style={{ marginTop: '16px' }}>This website was built in Next.js with the React95 component library.</p>
-            <p>Here, you can find some apps I've built.</p>
+            <p>Here, you can learn more about me.</p>
 
             <p style={{ marginTop: '16px' }}>Feel free to explore and reach out!</p>
           </div>
