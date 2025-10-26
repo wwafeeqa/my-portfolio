@@ -5,14 +5,14 @@ const useWindowSize = () => {
   const isClient = typeof window === 'object';
 
   const getSize = () => ({
-    width: isClient ? window.innerWidth : undefined,
-    height: isClient ? window.innerHeight : undefined,
+    width: isClient ? window.innerWidth : 1024,
+    height: isClient ? window.innerHeight : 768,
   });
 
   const [windowSize, setWindowSize] = useState(getSize);
 
   useEffect(() => {
-    if (!isClient) return false;
+    if (!isClient) return;
 
     const handleResize = () => {
       setWindowSize(getSize());
@@ -20,7 +20,7 @@ const useWindowSize = () => {
 
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
-  }, [isClient]);
+  }, []);
 
   return windowSize;
 };

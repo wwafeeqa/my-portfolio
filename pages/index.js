@@ -6,16 +6,17 @@ import {
   Notepad,
   Msacm3210,
   Inetcpl1313,
-  Awfxcg321304,
   Cachevu100,
   Mmsys120,
   Folder,
+  Mail,
 } from '@react95/icons';
 import ReadMeWindow from '../components/ReadMeWindow';
 import MusicWindow from '../components/MusicWindow/MusicWindow';
 import Synth from '../components/SynthWindow/Synth.js';
 import Map from '../components/Map.js';
 import ProjectsModal from '../components/ProjectsModal';
+import ConnectWindow from '../components/ConnectWindow';
 import styled from 'styled-components';
 import getOpenModals from '../utils/getOpenModals'; // Import the helper function
 import useWindowSize from '../hooks/useWindowSize'; // Ensure you have this hook
@@ -28,9 +29,23 @@ const IconContainer = styled.button`
   flex-direction: column;
   gap: 4px;
   margin: 20px;
+  padding: 8px;
+  border-radius: 4px;
+  transition: all 200ms ease;
+  opacity: 0.9;
 
   * {
     cursor: pointer;
+  }
+
+  &:hover {
+    opacity: 1;
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  &:active {
+    transform: scale(0.98);
   }
 `;
 
@@ -68,6 +83,7 @@ const Home = () => {
   const [showSynth, setShowSynth] = useState(false);
   const [showMap, setShowMap] = useState(false);
   const [showProjects, setShowProjects] = useState(false);
+  const [showConnect, setShowConnect] = useState(false);
   const [currentProject, setCurrentProject] = useState(null);
   const canvasRef = useRef(null);
   const { width, height } = useWindowSize(); // Use the custom hook
@@ -79,6 +95,7 @@ const Home = () => {
     showSynth,
     showMap,
     showProjects,
+    showConnect,
   });
   const total = openModals.length;
 
@@ -134,6 +151,14 @@ const Home = () => {
             position={position}
           />
         );
+      case 'Connect':
+        return (
+          <ConnectWindow
+            key={modalType}
+            onClose={() => setShowConnect(false)}
+            position={position}
+          />
+        );
       default:
         return null;
     }
@@ -163,14 +188,14 @@ const Home = () => {
   return (
     <Container>
       <Head>
-        <title>Michal Hajlasz - Personal Website</title>
-        <meta name="description" content="My name is Michal Hajlasz and this is my website." />
-        <meta name="keywords" content="Michał Hajłasz, Michal Hajlasz, software developer, portfolio, projects, React, Next.js" />
-        <meta name="author" content="Michal Hajlasz" />
-        <meta property="og:title" content="Michal Hajlasz, Michał Hajłasz - Portfolio" />
-        <meta property="og:description" content="Check out Michal Hajlasz's projects and work in software development, music visualizers, and more!" />
+        <title>wafeeqa.io</title>
+        <meta name="description" content="My name is Wafeeqa Chowdhury and this is my website." />
+        <meta name="keywords" content="Michał Hajłasz, Wafeeqa Chowdhury, software developer, portfolio, projects, React, Next.js" />
+        <meta name="author" content="Wafeeqa Chowdhury" />
+        <meta property="og:title" content="Wafeeqa Chowdhury, Michał Hajłasz - Portfolio" />
+        <meta property="og:description" content="Check out Wafeeqa Chowdhury's projects and work in software development, music visualizers, and more!" />
         <meta property="og:url" content="https://michalh.vercel.app/" />
-        <link rel="icon" href="/eye.png" />
+        <link rel="icon" href="/image.png" />
       </Head>
 
       <Canvas ref={canvasRef}></Canvas>
@@ -204,6 +229,7 @@ const Home = () => {
           <div>MyProjects</div>
         </IconContainer>
 
+
         {/* Render all open modals */}
         {openModals.map((modalType) => (
           <div key={modalType}>{renderModal(modalType)}</div>
@@ -214,7 +240,6 @@ const Home = () => {
         list={
           <List>
             <List.Item
-              icon={<Awfxcg321304 variant="32x32_4" />}
               onClick={() =>
                 window
                   .open(

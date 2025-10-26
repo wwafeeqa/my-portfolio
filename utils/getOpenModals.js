@@ -5,6 +5,7 @@ export const getOpenModals = ({
     showSynth,
     showMap,
     showProjects,
+    showConnect,
   }) => {
     const modals = [];
     if (showReadMe) modals.push('ReadMe');
@@ -12,6 +13,7 @@ export const getOpenModals = ({
     if (showSynth) modals.push('Synth');
     if (showMap) modals.push('Map');
     if (showProjects) modals.push('Projects');
+    if (showConnect) modals.push('Connect');
     return modals;
   };
   export default getOpenModals;

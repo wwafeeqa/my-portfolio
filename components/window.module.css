@@ -1,0 +1,242 @@
+/* window.module.css - Shared styling for window components */
+
+.windowTextarea {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  font-family: "MS Sans Serif", "Microsoft Sans Serif", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 16px;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  border: none;
+  outline: none;
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+.windowTextarea:hover {
+  background-color: #252525;
+}
+
+.windowTextarea:focus {
+  outline: none;
+  background-color: #2a2a2a;
+}
+
+/* Modal window animation */
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.modalWrapper {
+  animation: modalFadeIn 200ms ease-out;
+}
+
+/* README content styling */
+.readmeContent {
+  width: 100%;
+  height: 100%;
+  padding: 24px;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  font-family: "MS Sans Serif", "Microsoft Sans Serif", Arial, sans-serif;
+  overflow-y: auto;
+}
+
+.profileSection {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #3a3a3a;
+}
+
+.profilePicture {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #3a3a3a;
+  transition: transform 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
+}
+
+.profilePicture:hover {
+  transform: scale(1.05);
+  border-color: #4a4a4a;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.profileText {
+  flex: 1;
+}
+
+.profileName {
+  margin: 0 0 8px 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.profileTitle {
+  margin: 0;
+  font-size: 16px;
+  color: #a0a0a0;
+}
+
+.textContent {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.textContent p {
+  margin: 8px 0;
+  color: #d4d4d4;
+}
+
+.indent {
+  padding-left: 16px;
+  color: #b0b0b0;
+}
+
+/* Typewriter cursor animation */
+.cursor {
+  display: inline-block;
+  animation: blink 1s infinite;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  0%, 49% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+}
+
+/* Connect Window Styling */
+.connectContent {
+  width: 100%;
+  height: 100%;
+  padding: 32px;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  font-family: "MS Sans Serif", "Microsoft Sans Serif", Arial, sans-serif;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.connectHeader {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #3a3a3a;
+}
+
+.connectTitle {
+  margin: 0 0 12px 0;
+  font-size: 28px;
+  font-weight: 600;
+  color: #ffffff;
+  min-height: 36px;
+}
+
+.connectSubtitle {
+  margin: 0;
+  font-size: 15px;
+  color: #a0a0a0;
+  line-height: 1.6;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contactGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 8px 0;
+}
+
+.contactCard {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #252525;
+  border: 1px solid #3a3a3a;
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 200ms ease;
+  cursor: pointer;
+}
+
+.contactCard:hover {
+  background-color: #2a2a2a;
+  border-color: #4a4a4a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.contactCard:active {
+  transform: translateY(0);
+}
+
+.contactIcon {
+  min-width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 200ms ease;
+}
+
+.contactCard:hover .contactIcon {
+  transform: scale(1.1);
+}
+
+.contactInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contactLabel {
+  font-size: 14px;
+  color: #a0a0a0;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contactValue {
+  font-size: 16px;
+  color: #d4d4d4;
+  transition: color 200ms ease;
+}
+
+.contactCard:hover .contactValue {
+  color: #ffffff;
+}
+
+.connectFooter {
+  text-align: center;
+  padding-top: 16px;
+  color: #a0a0a0;
+  font-size: 14px;
+  margin-top: auto;
+}
+
+.connectFooter p {
+  margin: 0;
+}

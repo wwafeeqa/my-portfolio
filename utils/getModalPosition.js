@@ -1,11 +1,15 @@
 // utils/getModalPosition.js
 const getModalPosition = (modalType, width, height) => {
+  // Provide default values for SSR
+  const safeWidth = width || 1024;
+  const safeHeight = height || 768;
+
   const modalWidth = 300;
   const modalHeight = 200;
 
   const positions = {
     ReadMe: {
-      x: Math.max((width - modalWidth) / 2, 10), // Centered horizontally
+      x: Math.max((safeWidth - modalWidth) / 2, 10), // Centered horizontally
       y: 50, // Fixed vertical position
     },
     Music: {
@@ -13,34 +17,38 @@ const getModalPosition = (modalType, width, height) => {
       y: 100, // Fixed vertical position
     },
     Synth: {
-      x: width - modalWidth - 300, // Fixed to the right
+      x: safeWidth - modalWidth - 300, // Fixed to the right
       y: 70,
     },
     Map: {
       x: 50,
-      y: height - modalHeight - 100, // Fixed to the bottom
+      y: safeHeight - modalHeight - 100, // Fixed to the bottom
     },
     Projects: {
-      x: width - modalWidth - 50,
-      y: height - modalHeight - 100,
+      x: safeWidth - modalWidth - 50,
+      y: safeHeight - modalHeight - 100,
     },
     Map: {
-      x: width - modalWidth - 1100,
+      x: safeWidth - modalWidth - 1100,
       y: 170
+    },
+    Connect: {
+      x: Math.max((safeWidth - modalWidth) / 2 + 100, 10),
+      y: 120
     }
   };
 
   // Adjust for mobile view if necessary
-  if (width < 600) {
+  if (safeWidth < 600) {
     return {
-      x: Math.max((width - modalWidth) / 2, 10),
+      x: Math.max((safeWidth - modalWidth) / 2, 10),
       y: 50 + (positions[modalType]?.y || 0),
     };
   }
 
   return positions[modalType] || {
-    x: Math.max((width - modalWidth) / 2, 10),
-    y: Math.max((height - modalHeight) / 2, 10),
+    x: Math.max((safeWidth - modalWidth) / 2, 10),
+    y: Math.max((safeHeight - modalHeight) / 2, 10),
   };
 };
 
