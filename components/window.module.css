@@ -107,6 +107,25 @@
   color: #b0b0b0;
 }
 
+.companyLogo {
+  display: inline;
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  vertical-align: middle;
+  object-fit: contain;
+}
+
+.link {
+  color: inherit;
+  text-decoration: underline;
+  transition: opacity 200ms ease;
+}
+
+.link:hover {
+  opacity: 0.8;
+}
+
 /* Typewriter cursor animation */
 .cursor {
   display: inline-block;

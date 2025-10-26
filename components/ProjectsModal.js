@@ -10,48 +10,111 @@ const ProjectsModal = ({
 }) => {
   const renderContent = () => {
     switch (currentProject) {
-      case 'Research':
+      case 'Hackathons':
         return (
           <div
             style={{
               display: 'flex',
-              justifyContent: 'center',
-              gap: '20px',
+              flexDirection: 'column',
+              gap: '10px',
               marginTop: '10px',
               padding: '0 10px',
             }}
           >
-            <div onClick={() => window.open('https://doi.org/10.1093/pnasnexus/pgae308', '_blank')?.focus()} style={{ cursor: 'pointer', textAlign: 'center' }}>
-              <Wmsui321001 variant="32x32_4" />
-              <p style={{ margin: '4px 0' }}>
-                My<br />
-                Research<br />
-                Paper
-              </p>
-            </div>
-            <div onClick={() => window.open('https://github.com/cheatingthemichal/USCOVID-Mobility-Predictability', '_blank')?.focus()} style={{ cursor: 'pointer', textAlign: 'center' }}>
-              <Defrag variant="32x32_4"/>
-              <p style={{ margin: '4px 0' }}>
-                Code and<br />
-                Data
-              </p>
-            </div>
+            <List width="100%">
+              <List.Item>Project 1 - Coming Soon</List.Item>
+              <List.Item>Project 2 - Coming Soon</List.Item>
+              <List.Item>Project 3 - Coming Soon</List.Item>
+            </List>
+          </div>
+        );
+      case 'Personal':
+        return (
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '10px',
+              marginTop: '10px',
+              padding: '0 10px',
+            }}
+          >
+            <List width="100%">
+              <List.Item>Project 1 - Coming Soon</List.Item>
+              <List.Item>Project 2 - Coming Soon</List.Item>
+              <List.Item>Project 3 - Coming Soon</List.Item>
+            </List>
+          </div>
+        );
+      case 'QWEB':
+        return (
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '10px',
+              marginTop: '10px',
+              padding: '0 10px',
+            }}
+          >
+            <List width="100%">
+              <List.Item>Project 1 - Coming Soon</List.Item>
+              <List.Item>Project 2 - Coming Soon</List.Item>
+              <List.Item>Project 3 - Coming Soon</List.Item>
+            </List>
+          </div>
+        );
+      case 'QSC':
+        return (
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '10px',
+              marginTop: '10px',
+              padding: '0 10px',
+            }}
+          >
+            <List width="100%">
+              <List.Item>Project 1 - Coming Soon</List.Item>
+              <List.Item>Project 2 - Coming Soon</List.Item>
+              <List.Item>Project 3 - Coming Soon</List.Item>
+            </List>
           </div>
         );
       default:
         return (
           <div
             style={{
-              display: 'flex',
-              justifyContent: 'center',
+              display: 'grid',
+              gridTemplateColumns: 'repeat(2, 1fr)',
+              gap: '20px',
               marginTop: '10px',
-              padding: '0 10px',
+              padding: '0 20px',
             }}
           >
-            <div onClick={() => selectProject('Research')} style={{ cursor: 'pointer', textAlign: 'center' }}>
+            <div onClick={() => selectProject('Hackathons')} style={{ cursor: 'pointer', textAlign: 'center' }}>
               <Folder variant="32x32_4"/>
-              <p style={{ margin: '4px 0' }}>
-                Research
+              <p style={{ margin: '4px 0', fontSize: '12px' }}>
+                Hackathons
+              </p>
+            </div>
+            <div onClick={() => selectProject('Personal')} style={{ cursor: 'pointer', textAlign: 'center' }}>
+              <Folder variant="32x32_4"/>
+              <p style={{ margin: '4px 0', fontSize: '12px' }}>
+                Personal<br />Projects
+              </p>
+            </div>
+            <div onClick={() => selectProject('QWEB')} style={{ cursor: 'pointer', textAlign: 'center' }}>
+              <Folder variant="32x32_4"/>
+              <p style={{ margin: '4px 0', fontSize: '12px' }}>
+                Queens<br />Web Dev
+              </p>
+            </div>
+            <div onClick={() => selectProject('QSC')} style={{ cursor: 'pointer', textAlign: 'center' }}>
+              <Folder variant="32x32_4"/>
+              <p style={{ margin: '4px 0', fontSize: '12px' }}>
+                Queens<br />Startup<br />Consulting
               </p>
             </div>
           </div>
@@ -63,8 +126,8 @@ const ProjectsModal = ({
     <Modal
       closeModal={onClose}
       style={{
-        width: '300px',
-        height: '200px',
+        width: '400px',
+        height: '350px',
         left: position.x,
         top: position.y,
         maxWidth: '90%',
