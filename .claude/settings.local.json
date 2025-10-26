@@ -17,7 +17,8 @@
       "Bash(curl:*)",
       "Bash(move:*)",
       "WebFetch(domain:github.com)",
-      "WebFetch(domain:raw.githubusercontent.com)"
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Read(//c/Users/wafee/Desktop/**)"
     ],
     "deny": [],
     "ask": []

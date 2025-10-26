@@ -22,9 +22,24 @@ const ProjectsModal = ({
             }}
           >
             <List width="100%">
-              <List.Item>Project 1 - Coming Soon</List.Item>
-              <List.Item>Project 2 - Coming Soon</List.Item>
-              <List.Item>Project 3 - Coming Soon</List.Item>
+              <List.Item
+                onClick={() => window.open('https://github.com/Saahil-Gupta/Lights-Camera-Auction', '_blank')?.focus()}
+                style={{ cursor: 'pointer' }}
+              >
+                <strong>Lights, Camera, Auction</strong>
+                <div style={{ fontSize: '11px', color: '#888', marginTop: '4px' }}>
+                  A minimalist, real-time silent auction website with 3D objects and live updates
+                </div>
+              </List.Item>
+              <List.Item
+                onClick={() => window.open('https://github.com/ChloeHouvardas/trojo', '_blank')?.focus()}
+                style={{ cursor: 'pointer' }}
+              >
+                <strong>Trojo</strong>
+                <div style={{ fontSize: '11px', color: '#888', marginTop: '4px' }}>
+                  Bringing you the perspective of a cyber security professional in your pocket
+                </div>
+              </List.Item>
             </List>
           </div>
         );
@@ -40,9 +55,27 @@ const ProjectsModal = ({
             }}
           >
             <List width="100%">
-              <List.Item>Project 1 - Coming Soon</List.Item>
-              <List.Item>Project 2 - Coming Soon</List.Item>
-              <List.Item>Project 3 - Coming Soon</List.Item>
+              <List.Item
+                onClick={() => window.open('https://wwafeeqa.github.io/pomodoro-timer-app/', '_blank')?.focus()}
+                style={{ cursor: 'pointer' }}
+              >
+                <strong>Pomodoro Timer</strong>
+                <div style={{ fontSize: '11px', color: '#888', marginTop: '4px' }}>
+                  Boosting productivity with hard-earned breaks
+                </div>
+              </List.Item>
+              <List.Item>
+                <strong>Co-Habit</strong>
+                <div style={{ fontSize: '11px', color: '#888', marginTop: '4px' }}>
+                  Choresharing app to avoid passive-aggressive messages from the roommate group chat
+                </div>
+              </List.Item>
+              <List.Item>
+                <strong>tail0r</strong>
+                <div style={{ fontSize: '11px', color: '#888', marginTop: '4px' }}>
+                  LLM tool to auto-tailor your resume based on job descriptions
+                </div>
+              </List.Item>
             </List>
           </div>
         );
@@ -58,9 +91,33 @@ const ProjectsModal = ({
             }}
           >
             <List width="100%">
-              <List.Item>Project 1 - Coming Soon</List.Item>
-              <List.Item>Project 2 - Coming Soon</List.Item>
-              <List.Item>Project 3 - Coming Soon</List.Item>
+              <List.Item
+                onClick={() => window.open('https://qweb.dev', '_blank')?.focus()}
+                style={{ cursor: 'pointer' }}
+              >
+                <strong>qweb.dev</strong>
+                <div style={{ fontSize: '11px', color: '#888', marginTop: '4px' }}>
+                  Leading the refresh of QWeb's website with a team of 3 developers
+                </div>
+              </List.Item>
+              <List.Item
+                onClick={() => window.open('https://github.com/queens-web-development-club', '_blank')?.focus()}
+                style={{ cursor: 'pointer' }}
+              >
+                <strong>Client Website Deployment</strong>
+                <div style={{ fontSize: '11px', color: '#888', marginTop: '4px' }}>
+                  Handling deployment and hosting for 5+ client websites
+                </div>
+              </List.Item>
+              <List.Item
+                onClick={() => window.open('https://github.com/queens-web-development-club/education25', '_blank')?.focus()}
+                style={{ cursor: 'pointer' }}
+              >
+                <strong>Education Tutorials</strong>
+                <div style={{ fontSize: '11px', color: '#888', marginTop: '4px' }}>
+                  Contributing to code for weekly tutorials on MongoDB, JavaScript and React
+                </div>
+              </List.Item>
             </List>
           </div>
         );
@@ -76,9 +133,21 @@ const ProjectsModal = ({
             }}
           >
             <List width="100%">
-              <List.Item>Project 1 - Coming Soon</List.Item>
-              <List.Item>Project 2 - Coming Soon</List.Item>
-              <List.Item>Project 3 - Coming Soon</List.Item>
+              <List.Item
+                onClick={() => window.open('https://cacheinyourcloset.com/', '_blank')?.focus()}
+                style={{ cursor: 'pointer' }}
+              >
+                <strong>Cache Pricing Intelligence</strong>
+                <div style={{ fontSize: '11px', color: '#888', marginTop: '4px' }}>
+                  Python web scraping API querying 4 resale marketplaces to help users instantly value their wardrobe
+                </div>
+              </List.Item>
+              <List.Item>
+                <strong>Trucking Data ETL Pipeline</strong>
+                <div style={{ fontSize: '11px', color: '#888', marginTop: '4px' }}>
+                  Flask REST API querying 2.2M trucking records, reducing supply chain M&A due diligence from hours to 30-second queries
+                </div>
+              </List.Item>
             </List>
           </div>
         );
