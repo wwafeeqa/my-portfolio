@@ -10,6 +10,7 @@ import {
   Mmsys120,
   Folder,
   Mail,
+  Msnsign100,
 } from '@react95/icons';
 import ReadMeWindow from '../components/ReadMeWindow';
 import MusicWindow from '../components/MusicWindow/MusicWindow';
@@ -230,8 +231,8 @@ const Home = () => {
         </IconContainer>
 
         <IconContainer onClick={() => setShowConnect(true)}>
-          <Mail variant="32x32_4" />
-          <div>Let's Connect.txt</div>
+          <Msnsign100 variant="32x32_4" />
+          <div>Let's Connect</div>
         </IconContainer>
 
         {/* Render all open modals */}

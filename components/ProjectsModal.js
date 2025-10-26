@@ -53,7 +53,10 @@ const projectsData = {
     {
       name: 'Cache Pricing Intelligence',
       description: 'Python web scraping API querying 4 resale marketplaces to help users instantly value their wardrobe',
-      link: 'https://cacheinyourcloset.com/',
+      links: [
+        'https://cacheinyourcloset.com/',
+        'https://www.linkedin.com/posts/queens-startup-consulting_recently-queens-startup-consulting-worked-activity-7356501481497243648-rT-O/',
+      ],
     },
     {
       name: 'Trucking Data ETL Pipeline',
@@ -78,17 +81,29 @@ const ProjectsModal = ({
 }) => {
   // Render a single project item
   const renderProjectItem = (project, index) => {
+    const hasLinks = project.link || project.links;
+
     const itemStyle = {
       padding: '12px',
-      ...(project.link && { cursor: 'pointer' }),
+      ...(hasLinks && { cursor: 'pointer' }),
     };
 
-    const handleClick = project.link
-      ? () => window.open(project.link, '_blank')?.focus()
-      : undefined;
+    const handleClick = () => {
+      if (project.links) {
+        // Open multiple links - must be synchronous to avoid popup blockers
+        const [firstLink, ...otherLinks] = project.links;
+        window.open(firstLink, '_blank');
+        otherLinks.forEach(link => {
+          window.open(link, '_blank');
+        });
+      } else if (project.link) {
+        // Open single link
+        window.open(project.link, '_blank')?.focus();
+      }
+    };
 
     return (
-      <List.Item key={index} onClick={handleClick} style={itemStyle}>
+      <List.Item key={index} onClick={hasLinks ? handleClick : undefined} style={itemStyle}>
         <div>
           <strong style={{ marginLeft: '8px' }}>{project.name}</strong>
           <div style={{ fontSize: '11px', color: '#888', marginTop: '8px', lineHeight: '1.5', marginLeft: '8px' }}>
