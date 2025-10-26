@@ -95,7 +95,7 @@ const ConnectWindow = ({ onClose, position }) => {
             Let's Connect!
           </h2>
           <p style={{ margin: 0, fontSize: '14px', color: '#a0a0a0' }}>
-            I'd love to hear from you! Click any icon below to get in touch.
+            I'd love to chat about career opportunities, tech, books, or anything else!
           </p>
         </div>
 

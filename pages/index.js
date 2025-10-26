@@ -204,7 +204,7 @@ const Home = () => {
       <Content>
         <IconContainer onClick={() => setShowReadMe(true)}>
           <Notepad variant="32x32_4" />
-          <div>README.txt</div>
+          <div>README.md</div>
         </IconContainer>
 
         <IconContainer onClick={() => setShowMusic(true)}>

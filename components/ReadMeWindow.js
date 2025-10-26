@@ -44,7 +44,7 @@ const ReadMeWindow = ({ onClose, position }) => {
           zIndex: 1000,
         }}
         icon={<Notepad variant="16x16_4" />}
-        title="README.txt"
+        title="README.md"
         menu={[
           {
             name: 'Options',
