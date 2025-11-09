@@ -188,7 +188,7 @@ const Home = () => {
   return (
     <Container>
       <Head>
-        <title>wafeeqa.io</title>
+        <title>wafeeqa's portfolio</title>
         <meta name="description" content="My name is Wafeeqa Chowdhury and this is my website." />
         <meta name="keywords" content="Michał Hajłasz, Wafeeqa Chowdhury, software developer, portfolio, projects, React, Next.js" />
         <meta name="author" content="Wafeeqa Chowdhury" />
