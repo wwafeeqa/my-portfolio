@@ -10,6 +10,7 @@ import {
   Mmsys120,
   Folder,
   Mail,
+  Msnsign100,
 } from '@react95/icons';
 import ReadMeWindow from '../components/ReadMeWindow';
 import MusicWindow from '../components/MusicWindow/MusicWindow';
@@ -203,22 +204,22 @@ const Home = () => {
       <Content>
         <IconContainer onClick={() => setShowReadMe(true)}>
           <Notepad variant="32x32_4" />
-          <div>README.txt</div>
+          <div>README.md</div>
         </IconContainer>
 
-        <IconContainer onClick={() => setShowMusic(true)}>
+        {/* <IconContainer onClick={() => setShowMusic(true)}>
           <Msacm3210 variant="32x32_4" />
-          <div>MyMusicVisualizer.exe</div>
+          <div>MyMusicVisualizer</div>
         </IconContainer>
 
         <IconContainer onClick={() => setShowSynth(true)}>
           <Mmsys120 variant="32x32_4" />
-          <div>MySynthesizer.exe</div>
-        </IconContainer>
+          <div>MySynthesizer</div>
+        </IconContainer> */}
 
         <IconContainer onClick={() => setShowMap(true)}>
           <Inetcpl1313 variant="48x48_4" />
-          <div>MyMountainFinder.exe</div>
+          <div>MyMountainFinder</div>
         </IconContainer>
 
         <IconContainer onClick={() => {
@@ -226,9 +227,13 @@ const Home = () => {
           setCurrentProject(null);
         }}>
           <Folder variant="32x32_4" />
-          <div>MyProjects</div>
+          <div>My Projects</div>
         </IconContainer>
 
+        <IconContainer onClick={() => setShowConnect(true)}>
+          <Msnsign100 variant="32x32_4" />
+          <div>Let's Connect</div>
+        </IconContainer>
 
         {/* Render all open modals */}
         {openModals.map((modalType) => (
@@ -240,18 +245,6 @@ const Home = () => {
         list={
           <List>
             <List.Item
-              onClick={() =>
-                window
-                  .open(
-                    'https://www.linkedin.com/in/micha%C5%82-haj%C5%82asz-9ba5a8224/',
-                    '_blank'
-                  )
-                  ?.focus()
-              }
-            >
-              LinkedIn
-            </List.Item>
-            <List.Item
               icon={<Cachevu100 variant="32x32_4" />}
               onClick={() =>
                 window
@@ -262,7 +255,7 @@ const Home = () => {
                   ?.focus()
               }
             >
-              Source Code
+              Inspired by
             </List.Item>
           </List>
         }

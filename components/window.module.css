@@ -107,6 +107,25 @@
   color: #b0b0b0;
 }
 
+.companyLogo {
+  display: inline;
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  vertical-align: middle;
+  object-fit: contain;
+}
+
+.link {
+  color: inherit;
+  text-decoration: underline;
+  transition: opacity 200ms ease;
+}
+
+.link:hover {
+  opacity: 0.8;
+}
+
 /* Typewriter cursor animation */
 .cursor {
   display: inline-block;
@@ -239,4 +258,24 @@
 
 .connectFooter p {
   margin: 0;
+}
+
+/* Project folder hover effects */
+.projectFolder {
+  cursor: pointer;
+  text-align: center;
+  padding: 8px;
+  border-radius: 4px;
+  transition: all 200ms ease;
+  opacity: 0.9;
+}
+
+.projectFolder:hover {
+  opacity: 1;
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.projectFolder:active {
+  transform: scale(0.98);
 }
