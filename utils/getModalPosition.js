@@ -21,16 +21,12 @@ const getModalPosition = (modalType, width, height) => {
       y: 70,
     },
     Map: {
-      x: 50,
-      y: safeHeight - modalHeight - 100, // Fixed to the bottom
-    },
-    Projects: {
-      x: safeWidth - modalWidth - 50,
-      y: safeHeight - modalHeight - 100,
-    },
-    Map: {
       x: safeWidth - modalWidth - 1100,
       y: 170
+    },
+    Projects: {
+      x: Math.max((safeWidth - 500) / 2, 10), // Centered horizontally (accounting for max width of 600px)
+      y: 80, // Near top of screen
     },
     Connect: {
       x: Math.max((safeWidth - modalWidth) / 2 + 100, 10),

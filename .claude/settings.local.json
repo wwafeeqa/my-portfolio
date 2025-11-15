@@ -18,7 +18,10 @@
       "Bash(move:*)",
       "WebFetch(domain:github.com)",
       "WebFetch(domain:raw.githubusercontent.com)",
-      "Read(//c/Users/wafee/Desktop/**)"
+      "Read(//c/Users/wafee/Desktop/**)",
+      "Bash(npm view:*)",
+      "Bash(nul)",
+      "Bash(powershell -Command:*)"
     ],
     "deny": [],
     "ask": []
