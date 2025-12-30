@@ -11,6 +11,7 @@ import {
   Folder,
   Mail,
   Msnsign100,
+  Progman32,
 } from '@react95/icons';
 import ReadMeWindow from '../components/ReadMeWindow';
 import MusicWindow from '../components/MusicWindow/MusicWindow';
@@ -205,6 +206,11 @@ const Home = () => {
         <IconContainer onClick={() => setShowReadMe(true)}>
           <Notepad variant="32x32_4" />
           <div>README.md</div>
+        </IconContainer>
+
+        <IconContainer onClick={() => window.open('/Wafeeqa_Resume.pdf', '_blank')}>
+          <Progman32 variant="32x32_4" />
+          <div>MyResume.pdf</div>
         </IconContainer>
 
         {/* <IconContainer onClick={() => setShowMusic(true)}>
