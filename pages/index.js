@@ -189,12 +189,12 @@ const Home = () => {
   return (
     <Container>
       <Head>
-        <title>wafeeqa's portfolio</title>
-        <meta name="description" content="My name is Wafeeqa Chowdhury and this is my website." />
-        <meta name="keywords" content="Michał Hajłasz, Wafeeqa Chowdhury, software developer, portfolio, projects, React, Next.js" />
+        <title>Wafeeqa Chowdhury - Portfolio</title>
+        <meta name="description" content="Software Engineer and Computer Science student at Queen's University. Fulbright Killam Fellow heading to UC Irvine for exchange in January 2026." />
+        <meta name="keywords" content="Wafeeqa Chowdhury, wafeeqa, software engineer, software developer, portfolio, projects, React, Next.js, Queen's University, queens university, Fulbright Killam, queens startup consulting" />
         <meta name="author" content="Wafeeqa Chowdhury" />
-        <meta property="og:title" content="Wafeeqa Chowdhury, Michał Hajłasz - Portfolio" />
-        <meta property="og:description" content="Check out Wafeeqa Chowdhury's projects and work in software development, music visualizers, and more!" />
+        <meta property="og:title" content="Wafeeqa Chowdhury - Portfolio" />
+        <meta property="og:description" content="Software Engineer and Computer Science student. Check out my projects in web development, data engineering, and more!" />
         <meta property="og:url" content="https://michalh.vercel.app/" />
         <link rel="icon" href="/image.png" />
       </Head>
