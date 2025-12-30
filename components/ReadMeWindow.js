@@ -122,7 +122,15 @@ const ReadMeWindow = ({ onClose, position }) => {
               >
                 UC Irvine
               </a>
-              {' '}for exchange in January 2026
+              {' '}for exchange in January 2026 as a{' '}
+              <a
+                href="https://www.fulbright.ca/programs/killam-fellowships"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.link}
+              >
+                Fulbright Killam fellow
+              </a>
             </p>
 
             <p style={{ marginTop: '16px' }}>This website was built in Next.js with the React95 component library.</p>

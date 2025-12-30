@@ -122,6 +122,10 @@
   transition: opacity 200ms ease;
 }
 
+.link:visited {
+  color: inherit;
+}
+
 .link:hover {
   opacity: 0.8;
 }
@@ -198,6 +202,10 @@
   color: inherit;
   transition: all 200ms ease;
   cursor: pointer;
+}
+
+.contactCard:visited {
+  color: inherit;
 }
 
 .contactCard:hover {
