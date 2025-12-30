@@ -122,7 +122,7 @@ const ReadMeWindow = ({ onClose, position }) => {
               >
                 UC Irvine
               </a>
-              {' '}for exchange in January 2026 as a{' '}
+              {' '}for exchange in January as a{' '}
               <a
                 href="https://www.fulbright.ca/programs/killam-fellowships"
                 target="_blank"
