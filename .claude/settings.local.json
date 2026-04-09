@@ -21,7 +21,8 @@
       "Read(//c/Users/wafee/Desktop/**)",
       "Bash(npm view:*)",
       "Bash(nul)",
-      "Bash(powershell -Command:*)"
+      "Bash(powershell -Command:*)",
+      "WebSearch"
     ],
     "deny": [],
     "ask": []

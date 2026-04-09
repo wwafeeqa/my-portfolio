@@ -7,6 +7,11 @@ import styles from './window.module.css';
 const projectsData = {
   Hackathons: [
     {
+      name: 'AI Dojo',
+      description: 'Swipe to judge real vs. AI-generated images and sharpen your eye before the algorithm fools you',
+      link: 'https://github.com/wwafeeqa/IrvineHacks26',
+    },
+    {
       name: 'Lights, Camera, Auction',
       description: 'A minimalist, real-time silent auction website with 3D objects and live updates',
       link: 'https://github.com/Saahil-Gupta/Lights-Camera-Auction',
