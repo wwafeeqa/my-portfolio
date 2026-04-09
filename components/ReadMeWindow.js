@@ -73,6 +73,15 @@ const ReadMeWindow = ({ onClose, position }) => {
               <p className={styles.profileTitle}>
                 Software Engineer based in{' '}
                 <a
+                  href="https://www.worldatlas.com/cities/irvine-california-united-states.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.link}
+                >
+                  Irvine
+                </a>
+                {' '}and{' '}
+                <a
                   href="https://www.worldatlas.com/cities/toronto-canada.html"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -99,20 +108,7 @@ const ReadMeWindow = ({ onClose, position }) => {
               </a>
             </p>
             <p className={styles.indent}>
-              {'>'} interning at{' '}
-              <img src="/rbc.jpeg" alt="RBC" className={styles.companyLogo} />
-              <a
-                href="https://www.rbc.com/about-rbc.html"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.link}
-              >
-                RBC
-              </a>
-              {' '}as a software engineer working on NodeJS applications used for Global IT Risk Reporting
-            </p>
-            <p className={styles.indent}>
-              {'>'} heading to{' '}
+              {'>'} on exchange at{' '}
               <img src="/uci.png" alt="UC Irvine" className={styles.companyLogo} />
               <a
                 href="https://uci.edu/"
@@ -122,7 +118,7 @@ const ReadMeWindow = ({ onClose, position }) => {
               >
                 UC Irvine
               </a>
-              {' '}for exchange in January as a{' '}
+              {' '}as a{' '}
               <a
                 href="https://www.fulbright.ca/programs/killam-fellowships"
                 target="_blank"
