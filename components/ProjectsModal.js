@@ -31,6 +31,7 @@ const projectsData = {
     {
       name: 'Co-Habit',
       description: 'Choresharing app to avoid passive-aggressive messages from the roommate group chat',
+      link: 'https://co-habit-living.vercel.app',
     },
     {
       name: 'tail0r',
